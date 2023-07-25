@@ -31,8 +31,9 @@
 
 <body>
     <!-- start header section  -->
-    <header>
-        <nav class="w-[98%] md:w-[90%] mx-auto bg-myBg rounded-full mt-8">
+    <header class="w-[98%] md:w-[90%] mx-auto">
+        <!-- navigation section  -->
+        <nav class="bg-myBg rounded-full my-8">
             <div class="navbar">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -65,12 +66,38 @@
                 <div class="navbar-end">
                     <div class="flex items-center relative">
                         <input type="text" placeholder="Search"
-                            class="input input-bordered w-[120px] md:w-auto rounded-full" />
+                            class="input input-bordered w-[120px] md:w-[180px] lg:w-[300px] h-[40px] rounded-full" />
                         <i class="fa-solid fa-magnifying-glass absolute text-[20px] right-5"></i>
                     </div>
                 </div>
             </div>
         </nav>
+
+
+        <!-- carousel section  -->
+        <div class="carousel">
+            <div id="slide1" class="carousel-item relative w-full h-full">
+                <!-- banner image  -->
+                <img src="/images/banner1.png" class="w-full" />
+
+                <!-- banner info -->
+                <!-- bg-gradient-to-r from-[#121212] to-[rgba(18, 18, 18, 0.00)] -->
+                <div class="flex items-center justify-center">
+                    <div class="absolute left-0 text-center space-y-2 w-full">
+                        <h2 class="text-4xl lg:text-6xl font-bold text-white lg:max-w-[60%] mx-auto">Exotic tastes at your doorstep</h2>
+                        <p class="text-white text-[18px]">We supply highly quality organic products</p>
+                        <button class="btn btn-error bg-myBg border-0 text-white">Shop Now</button>
+                    </div>
+                </div>
+
+                <!-- slider left & right arrow button -->
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+
     </header>
     <!-- end header section  -->
 </body>
