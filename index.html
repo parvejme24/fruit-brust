@@ -10,10 +10,69 @@
     <!-- tailwind and daisyUI url  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awsome url  -->
+    <script src="https://kit.fontawesome.com/ea57345992.js" crossorigin="anonymous"></script>
+
+    <!-- custome script  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'myBg': '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
 
 <body>
-
+    <!-- start header section  -->
+    <header>
+        <nav class="w-[98%] md:w-[90%] mx-auto bg-myBg rounded-full mt-8">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-bold">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 font-bold text-white">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="btn btn-ghost normal-case text-xl text-white"><img class="w-[40px]" src="images/logo.png"
+                        alt=""> Fruit Burst</a>
+                <div class="navbar-end">
+                    <div class="flex items-center relative">
+                        <input type="text" placeholder="Search"
+                            class="input input-bordered w-[120px] md:w-auto rounded-full" />
+                        <i class="fa-solid fa-magnifying-glass absolute text-[20px] right-5"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end header section  -->
 </body>
 
 </html>
